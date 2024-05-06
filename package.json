@@ -1,0 +1,23 @@
+{
+  "name": "ci4-event-app",
+  "version": "1.0.0",
+  "description": "CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.\r More information can be found at the [official site](https://codeigniter.com).",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./public/css/input.css -o ./public/css/output.css --watch"
+  },
+  "keywords": [],
+  "author": "Rafif Athallah (https://github.com/zangetsuuuu)",
+  "license": "ISC",
+  "devDependencies": {
+    "daisyui": "^4.10.2",
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "caniuse-lite": "^1.0.30001612"
+  }
+}

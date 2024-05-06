@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Set font family */
+@font-face {
+    font-family: 'Overused Grotesk';
+    font-style: normal;
+    font-weight: 300; /* Light */
+    src: url('../font/OverusedGrotesk-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Overused Grotesk';
+    font-style: normal;
+    font-weight: 400; /* Book */
+    src: url('../font/OverusedGrotesk-Roman.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Overused Grotesk';
+    font-style: normal;
+    font-weight: 500; /* Medium */
+    src: url('../font/OverusedGrotesk-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Overused Grotesk';
+    font-style: normal;
+    font-weight: 600; /* SemiBold */
+    src: url('../font/OverusedGrotesk-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Overused Grotesk';
+    font-style: normal;
+    font-weight: 700; /* Bold */
+    src: url('../font/OverusedGrotesk-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Overused Grotesk';
+    font-style: normal;
+    font-weight: 800; /* ExtraBold */
+    src: url('../font/OverusedGrotesk-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Overused Grotesk';
+    font-style: normal;
+    font-weight: 900; /* Black */
+    src: url('../font/OverusedGrotesk-Black.woff2') format('woff2');
+}
+
+body {
+    font-family: 'Overused Grotesk';
+    @apply bg-cover bg-center bg-no-repeat min-h-screen;
+    background-image: url('../img/main-bg-2.webp');
+}
+
+#welcome {
+    @apply bg-cover bg-center bg-no-repeat;
+    background-image: url('../img/main-bg-1.webp');
+}
+
+[data-theme="light"] 
+.btn-primary,
+.btn-error {
+    @apply text-white;
+}
+
+.nav-link {
+    position: relative;
+    padding: 0 4px;
+    padding-bottom: 2px;
+    font-size: 0.875rem;
+    color: rgba(0, 0, 0, 1);
+    transition: color 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.nav-link:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: currentColor;
+    transition: width 0.2s ease-in-out;
+}
+
+.nav-link.active:after,
+.nav-link:hover:after {
+    width: 100%;
+}
